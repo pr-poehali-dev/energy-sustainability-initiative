@@ -553,6 +553,22 @@ const Index = () => {
                 <div className="space-y-4">
                   <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-6">
                     <div className="flex items-center gap-3 mb-2">
+                      <Icon name="Phone" size={20} />
+                      <span className="font-semibold">Телефон</span>
+                    </div>
+                    <a href="tel:+79608324353" className="text-white/80 text-sm hover:text-white transition-colors">+7 (960) 832-43-53 — Андрей</a>
+                  </div>
+
+                  <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-6">
+                    <div className="flex items-center gap-3 mb-2">
+                      <Icon name="Globe" size={20} />
+                      <span className="font-semibold">Сайт</span>
+                    </div>
+                    <a href="https://master-a.pro" target="_blank" rel="noopener noreferrer" className="text-white/80 text-sm hover:text-white transition-colors">master-a.pro</a>
+                  </div>
+
+                  <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-6">
+                    <div className="flex items-center gap-3 mb-2">
                       <Icon name="MapPin" size={20} />
                       <span className="font-semibold">Адрес</span>
                     </div>
