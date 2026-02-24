@@ -243,7 +243,7 @@ const Index = () => {
           </div>
 
           <div className="hidden md:flex items-center gap-1">
-            {["О нас", "Наши работы", "Этапы работы", "Вопросы", "Контакты"].map((item) => (
+            {["О нас", "Наши работы", "Этапы работы", "Контакты"].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase().replace(/ /g, "-")}`}
@@ -533,48 +533,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="вопросы" className="relative z-10 py-24 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-12">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-              <div>
-                <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance">
-                  Частые вопросы
-                </h2>
-                <p className="text-xl text-white/80 leading-relaxed text-pretty">
-                  Всё, что нужно знать о заказе церковной утвари, иконостасов и других работ по благоустройству храма.
-                </p>
-              </div>
 
-              <div className="space-y-4">
-                {faqs.map((faq, index) => (
-                  <div
-                    key={index}
-                    className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur overflow-hidden"
-                  >
-                    <button
-                      onClick={() => toggleFaq(index)}
-                      className="w-full p-6 text-left flex items-center justify-between hover:bg-white/5 transition-colors"
-                    >
-                      <h3 className="text-lg font-semibold pr-4">{faq.question}</h3>
-                      {openFaq === index ? (
-                        <Icon name="Minus" size={20} />
-                      ) : (
-                        <Icon name="Plus" size={20} />
-                      )}
-                    </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6">
-                        <p className="text-white/80 leading-relaxed">{faq.answer}</p>
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section id="контакты" className="relative z-10 py-24 px-6">
         <div className="max-w-7xl mx-auto">
