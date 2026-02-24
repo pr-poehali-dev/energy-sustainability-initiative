@@ -129,6 +129,36 @@ const galleryItems: GalleryItem[] = [
     title: "Киот «Виноградная лоза»",
     location: "Ручная резьба, золочение",
   },
+  {
+    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/9a21fb88-4146-4038-9e76-89575030a7a8.jpg",
+    alt: "Иконостас, ул. Калинина",
+    title: "Иконостас",
+    location: "Самара, ул. Калинина",
+  },
+  {
+    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/5d753485-4d41-46fe-8ee3-a9913b809859.jpg",
+    alt: "Иконостас резной с росписью",
+    title: "Иконостас",
+    location: "Ручная работа",
+  },
+  {
+    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/a34dee0b-425e-452b-8d7b-2722b2e712e3.jpg",
+    alt: "Киот белый с золотом в мастерской",
+    title: "Киот белый с золотом",
+    location: "Мастерская",
+  },
+  {
+    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/1b0de553-3d60-4457-9244-83e26b58fe5a.jpg",
+    alt: "Киот белый с золотом — производство",
+    title: "Киот — производство",
+    location: "Мастерская",
+  },
+  {
+    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/a2eec3f7-5efb-4c4b-b73f-7db637d6d544.jpeg",
+    alt: "Престол деревянный резной",
+    title: "Престол резной",
+    location: "Ручная резьба по дереву",
+  },
 ]
 
 const Index = () => {
