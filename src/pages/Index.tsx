@@ -56,7 +56,7 @@ const Index = () => {
           </div>
 
           <div className="hidden md:flex items-center gap-1">
-            {["Услуги", "Этапы работы", "Вопросы", "Контакты"].map((item) => (
+            {["Услуги", "Наши работы", "Этапы работы", "Вопросы", "Контакты"].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase().replace(/ /g, "-")}`}
@@ -138,6 +138,79 @@ const Index = () => {
               </div>
               <h3 className="text-xl font-semibold mb-4">Церковная утварь</h3>
               <p className="text-white/80 leading-relaxed">Изготовление предметов церковного обихода из дерева и других материалов.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="наши-работы" className="relative z-10 py-24 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance">Наши работы</h2>
+            <p className="text-xl text-white/80 max-w-3xl mx-auto text-pretty">
+              Каждое изделие создаётся вручную с соблюдением православных канонов и традиций иконописи.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="rounded-2xl overflow-hidden ring-1 ring-white/10 group">
+              <div className="relative h-80 overflow-hidden">
+                <img
+                  src="https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/files/582fc788-b669-4d71-83e4-4818c59be741.jpg"
+                  alt="Иконостас с золотой резьбой"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                <div className="absolute bottom-0 left-0 p-6">
+                  <h3 className="text-xl font-semibold">Иконостасы</h3>
+                  <p className="text-white/70 text-sm mt-1">Золочёная резьба по дереву</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="rounded-2xl overflow-hidden ring-1 ring-white/10 group">
+              <div className="relative h-80 overflow-hidden">
+                <img
+                  src="https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/files/ded4d75e-4e12-44bb-991a-bcf01bdf2c9b.jpg"
+                  alt="Мозаичная икона"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                <div className="absolute bottom-0 left-0 p-6">
+                  <h3 className="text-xl font-semibold">Мозаичные иконы</h3>
+                  <p className="text-white/70 text-sm mt-1">Византийский стиль</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="rounded-2xl overflow-hidden ring-1 ring-white/10 group">
+              <div className="relative h-80 overflow-hidden">
+                <img
+                  src="https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/files/6e729ff5-2c79-4ea5-9efa-914c336a77c8.jpg"
+                  alt="Деревянный киот"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                <div className="absolute bottom-0 left-0 p-6">
+                  <h3 className="text-xl font-semibold">Киоты</h3>
+                  <p className="text-white/70 text-sm mt-1">Ручная работа из дерева</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="rounded-2xl overflow-hidden ring-1 ring-white/10 group">
+              <div className="relative h-80 overflow-hidden">
+                <img
+                  src="https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/files/7410996f-418d-49b4-a7c1-04a1b0ebf502.jpg"
+                  alt="Отделка храма"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                <div className="absolute bottom-0 left-0 p-6">
+                  <h3 className="text-xl font-semibold">Отделка и облицовка</h3>
+                  <p className="text-white/70 text-sm mt-1">Гранит и натуральный камень</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
