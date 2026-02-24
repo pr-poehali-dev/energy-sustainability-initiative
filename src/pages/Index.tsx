@@ -254,9 +254,7 @@ const Index = () => {
             ))}
           </div>
 
-          <div className="flex items-center gap-3">
-            <Button className="bg-white text-black hover:bg-white/90 rounded-full px-6">Оставить заявку</Button>
-          </div>
+
         </nav>
 
         <div className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-120px)] px-6 text-center">
@@ -273,9 +271,6 @@ const Index = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-16">
-            <Button size="lg" className="bg-white text-black hover:bg-white/90 rounded-full px-8 py-4 text-lg">
-              Обсудить проект
-            </Button>
             <Button
               size="lg"
               variant="outline"
@@ -509,14 +504,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="text-center">
-              <Button
-                size="lg"
-                className="bg-white text-black hover:bg-white/90 rounded-full px-12 py-4 text-lg font-semibold"
-              >
-                Обсудить проект
-              </Button>
-            </div>
+
           </div>
         </div>
       </section>
