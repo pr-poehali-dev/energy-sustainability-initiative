@@ -156,14 +156,14 @@ const Index = () => {
             <div className="rounded-2xl overflow-hidden ring-1 ring-white/10 group">
               <div className="relative h-80 overflow-hidden">
                 <img
-                  src="https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/files/582fc788-b669-4d71-83e4-4818c59be741.jpg"
-                  alt="Иконостас с золотой резьбой"
+                  src="https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/ff708a02-587c-4fa6-afd3-ba3e7a567c54.jpg"
+                  alt="Иконостас Нечаянная радость, Зубчаниновка"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                 <div className="absolute bottom-0 left-0 p-6">
-                  <h3 className="text-xl font-semibold">Иконостасы</h3>
-                  <p className="text-white/70 text-sm mt-1">Золочёная резьба по дереву</p>
+                  <h3 className="text-xl font-semibold">Нечаянная Радость</h3>
+                  <p className="text-white/70 text-sm mt-1">Зубчаниновка, Самарская область</p>
                 </div>
               </div>
             </div>
@@ -171,14 +171,14 @@ const Index = () => {
             <div className="rounded-2xl overflow-hidden ring-1 ring-white/10 group">
               <div className="relative h-80 overflow-hidden">
                 <img
-                  src="https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/files/ded4d75e-4e12-44bb-991a-bcf01bdf2c9b.jpg"
-                  alt="Мозаичная икона"
+                  src="https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/1159c379-3f80-4e56-96a2-534f524d72b8.JPG"
+                  alt="Иконостас, Кротовка"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                 <div className="absolute bottom-0 left-0 p-6">
-                  <h3 className="text-xl font-semibold">Мозаичные иконы</h3>
-                  <p className="text-white/70 text-sm mt-1">Византийский стиль</p>
+                  <h3 className="text-xl font-semibold">Деревянный иконостас</h3>
+                  <p className="text-white/70 text-sm mt-1">Кротовка</p>
                 </div>
               </div>
             </div>
@@ -186,14 +186,14 @@ const Index = () => {
             <div className="rounded-2xl overflow-hidden ring-1 ring-white/10 group">
               <div className="relative h-80 overflow-hidden">
                 <img
-                  src="https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/files/6e729ff5-2c79-4ea5-9efa-914c336a77c8.jpg"
-                  alt="Деревянный киот"
+                  src="https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/2dbcb2b9-f56a-475d-8b38-47e41a6c7a6f.jpg"
+                  alt="Царские врата, храм Ильи Пророка"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                 <div className="absolute bottom-0 left-0 p-6">
-                  <h3 className="text-xl font-semibold">Киоты</h3>
-                  <p className="text-white/70 text-sm mt-1">Ручная работа из дерева</p>
+                  <h3 className="text-xl font-semibold">Царские врата</h3>
+                  <p className="text-white/70 text-sm mt-1">Храм Ильи Пророка</p>
                 </div>
               </div>
             </div>
@@ -201,14 +201,14 @@ const Index = () => {
             <div className="rounded-2xl overflow-hidden ring-1 ring-white/10 group">
               <div className="relative h-80 overflow-hidden">
                 <img
-                  src="https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/files/7410996f-418d-49b4-a7c1-04a1b0ebf502.jpg"
-                  alt="Отделка храма"
+                  src="https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/e8efd570-cefa-4920-8357-b84ce87ddb31.jpg"
+                  alt="Иконостас, Димитровград"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                 <div className="absolute bottom-0 left-0 p-6">
-                  <h3 className="text-xl font-semibold">Отделка и облицовка</h3>
-                  <p className="text-white/70 text-sm mt-1">Гранит и натуральный камень</p>
+                  <h3 className="text-xl font-semibold">Иконостас</h3>
+                  <p className="text-white/70 text-sm mt-1">Димитровград</p>
                 </div>
               </div>
             </div>
