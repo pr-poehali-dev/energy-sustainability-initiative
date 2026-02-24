@@ -243,7 +243,7 @@ const Index = () => {
           </div>
 
           <div className="hidden md:flex items-center gap-1">
-            {["Услуги", "Наши работы", "Этапы работы", "Вопросы", "Контакты"].map((item) => (
+            {["О нас", "Наши работы", "Этапы работы", "Вопросы", "Контакты"].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase().replace(/ /g, "-")}`}
@@ -292,7 +292,7 @@ const Index = () => {
         </div>
       </div>
 
-      <section id="услуги" className="relative z-10 py-24 px-6">
+      <section id="о-нас" className="relative z-10 py-24 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
             <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 text-center">
@@ -648,7 +648,7 @@ const Index = () => {
               </div>
 
               <div>
-                <h3 className="text-sm font-bold uppercase tracking-wider mb-6">УСЛУГИ</h3>
+                <h3 className="text-sm font-bold uppercase tracking-wider mb-6">О НАС</h3>
                 <ul className="space-y-3">
                   {["Иконостасы", "Киоты", "Мозаика", "Церковная утварь"].map((item) => (
                     <li key={item}>
