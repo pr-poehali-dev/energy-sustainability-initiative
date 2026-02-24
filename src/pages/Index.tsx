@@ -295,6 +295,10 @@ const Index = () => {
       <section id="о-нас" className="relative z-10 py-24 px-6">
         <div className="max-w-7xl mx-auto">
 
+          <div className="text-center mb-12">
+            <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6">О нас</h2>
+          </div>
+
           <div className="mb-16">
             <p className="text-white/70 text-lg leading-relaxed mb-12 max-w-3xl">
               Мастерская занимается изготовлением церковной утвари и предметов храмового убранства более 20 лет.
