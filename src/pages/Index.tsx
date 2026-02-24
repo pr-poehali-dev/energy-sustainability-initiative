@@ -99,6 +99,36 @@ const galleryItems: GalleryItem[] = [
     title: "Киот белый с золотом",
     location: "Мастерская",
   },
+  {
+    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/7d3197f5-0022-4eb4-a188-7f1cadbd441a.JPG",
+    alt: "Иконостас в деревянном храме",
+    title: "Иконостас",
+    location: "Деревянный храм",
+  },
+  {
+    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/c3ca9561-aacd-4fe4-8e74-63ba6a93b982.JPG",
+    alt: "Резной аналой с куполом",
+    title: "Аналой резной",
+    location: "Ручная резьба по дереву",
+  },
+  {
+    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/7f6a4eea-c8c0-4fb3-b685-092882e0bdb9.JPG",
+    alt: "Резное Распятие в мастерской",
+    title: "Распятие резное",
+    location: "Мастерская",
+  },
+  {
+    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/22843f6d-0731-4ec2-9baf-48c8182fc20a.JPG",
+    alt: "Белый киот с иконами",
+    title: "Киот белый",
+    location: "Мастерская",
+  },
+  {
+    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/ddeff19a-08c7-442f-bfa9-090ab180a31c.jpg",
+    alt: "Киот с резным золочёным обрамлением и иконой Богородицы",
+    title: "Киот «Виноградная лоза»",
+    location: "Ручная резьба, золочение",
+  },
 ]
 
 const Index = () => {
