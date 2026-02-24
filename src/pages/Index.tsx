@@ -7,8 +7,43 @@ interface FAQ {
   answer: string
 }
 
+interface GalleryItem {
+  src: string
+  alt: string
+  title: string
+  location: string
+}
+
+const galleryItems: GalleryItem[] = [
+  {
+    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/ff708a02-587c-4fa6-afd3-ba3e7a567c54.jpg",
+    alt: "Иконостас Нечаянная радость, Зубчаниновка",
+    title: "Нечаянная Радость",
+    location: "Зубчаниновка, Самарская область",
+  },
+  {
+    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/1159c379-3f80-4e56-96a2-534f524d72b8.JPG",
+    alt: "Иконостас, Кротовка",
+    title: "Деревянный иконостас",
+    location: "Кротовка",
+  },
+  {
+    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/2dbcb2b9-f56a-475d-8b38-47e41a6c7a6f.jpg",
+    alt: "Царские врата, храм Ильи Пророка",
+    title: "Царские врата",
+    location: "Храм Ильи Пророка",
+  },
+  {
+    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/e8efd570-cefa-4920-8357-b84ce87ddb31.jpg",
+    alt: "Иконостас, Димитровград",
+    title: "Иконостас",
+    location: "Димитровград",
+  },
+]
+
 const Index = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
+  const [lightbox, setLightbox] = useState<number | null>(null)
 
   const toggleFaq = (index: number) => {
     setOpenFaq(openFaq === index ? null : index)
@@ -153,68 +188,74 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="rounded-2xl overflow-hidden ring-1 ring-white/10 group">
-              <div className="relative h-80 overflow-hidden">
-                <img
-                  src="https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/ff708a02-587c-4fa6-afd3-ba3e7a567c54.jpg"
-                  alt="Иконостас Нечаянная радость, Зубчаниновка"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-                <div className="absolute bottom-0 left-0 p-6">
-                  <h3 className="text-xl font-semibold">Нечаянная Радость</h3>
-                  <p className="text-white/70 text-sm mt-1">Зубчаниновка, Самарская область</p>
+            {galleryItems.map((item, index) => (
+              <div
+                key={index}
+                className="rounded-2xl overflow-hidden ring-1 ring-white/10 group cursor-pointer"
+                onClick={() => setLightbox(index)}
+              >
+                <div className="relative h-80 overflow-hidden">
+                  <img
+                    src={item.src}
+                    alt={item.alt}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div className="bg-black/50 rounded-full p-3">
+                      <Icon name="ZoomIn" size={28} />
+                    </div>
+                  </div>
+                  <div className="absolute bottom-0 left-0 p-6">
+                    <h3 className="text-xl font-semibold">{item.title}</h3>
+                    <p className="text-white/70 text-sm mt-1">{item.location}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div className="rounded-2xl overflow-hidden ring-1 ring-white/10 group">
-              <div className="relative h-80 overflow-hidden">
-                <img
-                  src="https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/1159c379-3f80-4e56-96a2-534f524d72b8.JPG"
-                  alt="Иконостас, Кротовка"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-                <div className="absolute bottom-0 left-0 p-6">
-                  <h3 className="text-xl font-semibold">Деревянный иконостас</h3>
-                  <p className="text-white/70 text-sm mt-1">Кротовка</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="rounded-2xl overflow-hidden ring-1 ring-white/10 group">
-              <div className="relative h-80 overflow-hidden">
-                <img
-                  src="https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/2dbcb2b9-f56a-475d-8b38-47e41a6c7a6f.jpg"
-                  alt="Царские врата, храм Ильи Пророка"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-                <div className="absolute bottom-0 left-0 p-6">
-                  <h3 className="text-xl font-semibold">Царские врата</h3>
-                  <p className="text-white/70 text-sm mt-1">Храм Ильи Пророка</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="rounded-2xl overflow-hidden ring-1 ring-white/10 group">
-              <div className="relative h-80 overflow-hidden">
-                <img
-                  src="https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/e8efd570-cefa-4920-8357-b84ce87ddb31.jpg"
-                  alt="Иконостас, Димитровград"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-                <div className="absolute bottom-0 left-0 p-6">
-                  <h3 className="text-xl font-semibold">Иконостас</h3>
-                  <p className="text-white/70 text-sm mt-1">Димитровград</p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
+
+      {lightbox !== null && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/95"
+          onClick={() => setLightbox(null)}
+        >
+          <button
+            className="absolute top-6 right-6 bg-white/10 hover:bg-white/20 rounded-full p-3 transition-colors"
+            onClick={() => setLightbox(null)}
+          >
+            <Icon name="X" size={24} />
+          </button>
+
+          <button
+            className="absolute left-6 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 rounded-full p-3 transition-colors"
+            onClick={(e) => { e.stopPropagation(); setLightbox((lightbox - 1 + galleryItems.length) % galleryItems.length) }}
+          >
+            <Icon name="ChevronLeft" size={28} />
+          </button>
+
+          <div className="max-w-5xl max-h-[85vh] px-20" onClick={(e) => e.stopPropagation()}>
+            <img
+              src={galleryItems[lightbox].src}
+              alt={galleryItems[lightbox].alt}
+              className="max-h-[75vh] max-w-full object-contain rounded-xl"
+            />
+            <div className="text-center mt-4">
+              <h3 className="text-xl font-semibold">{galleryItems[lightbox].title}</h3>
+              <p className="text-white/60 text-sm mt-1">{galleryItems[lightbox].location}</p>
+            </div>
+          </div>
+
+          <button
+            className="absolute right-6 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 rounded-full p-3 transition-colors"
+            onClick={(e) => { e.stopPropagation(); setLightbox((lightbox + 1) % galleryItems.length) }}
+          >
+            <Icon name="ChevronRight" size={28} />
+          </button>
+        </div>
+      )}
 
       <section id="этапы-работы" className="relative z-10 py-24 px-6">
         <div className="max-w-7xl mx-auto">
