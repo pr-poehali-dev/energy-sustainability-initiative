@@ -12,6 +12,7 @@ interface GalleryItem {
   alt: string
   title: string
   location: string
+  category: string
 }
 
 const galleryItems: GalleryItem[] = [
@@ -20,150 +21,181 @@ const galleryItems: GalleryItem[] = [
     alt: "Иконостас Нечаянная радость, Зубчаниновка",
     title: "Нечаянная Радость",
     location: "Зубчаниновка, Самарская область",
+    category: "Иконостасы",
   },
   {
     src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/1159c379-3f80-4e56-96a2-534f524d72b8.JPG",
     alt: "Иконостас, Кротовка",
     title: "Деревянный иконостас",
     location: "Кротовка",
+    category: "Иконостасы",
   },
   {
     src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/2dbcb2b9-f56a-475d-8b38-47e41a6c7a6f.jpg",
     alt: "Царские врата, храм Ильи Пророка",
     title: "Царские врата",
     location: "Храм Ильи Пророка",
+    category: "Иконостасы",
   },
   {
     src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/e8efd570-cefa-4920-8357-b84ce87ddb31.jpg",
     alt: "Иконостас, Димитровград",
     title: "Иконостас",
     location: "Димитровград",
+    category: "Иконостасы",
   },
   {
     src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/7343510c-8b9e-4638-9821-53e385b33c8b.JPG",
     alt: "Иконостас Серафимовская, братья Корыстелевы",
     title: "Серафимовская церковь",
     location: "Иконостас ручной работы",
+    category: "Иконостасы",
   },
   {
     src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/e8c21f08-759a-4557-b2a7-266150a73541.jpg",
     alt: "Иконостас в гостинице Русская охота",
     title: "Иконостас",
     location: "Гостиница «Русская охота»",
+    category: "Иконостасы",
   },
   {
     src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/8112ced8-3884-4e9b-85ab-4899bc1030fd.jpg",
     alt: "Иконостас, Винновка",
     title: "Иконостас",
     location: "Винновка",
+    category: "Иконостасы",
   },
   {
     src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/b7dd4cfc-d8d4-414d-8d14-70f0a301de3e.JPG",
     alt: "Иконостас, храм Ильи Пророка",
     title: "Иконостас Ильи Пророка",
     location: "Самара, ул. 116-я",
+    category: "Иконостасы",
   },
   {
     src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/969b5d41-1ba0-4503-b825-5e0a84e81ebd.jpg",
     alt: "Монтаж иконостаса Нечаянная Радость, Зубчаниновка",
     title: "Нечаянная Радость — монтаж",
     location: "Зубчаниновка, Самарская область",
-  },
-  {
-    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/2072f6d3-8ccb-4169-a093-bf8683529ad9.jpg",
-    alt: "Заготовки киотов в мастерской",
-    title: "Производство киотов",
-    location: "Мастерская",
-  },
-  {
-    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/72a67cb6-6335-4bce-b083-57c556e07012.jpg",
-    alt: "Резной киот с иконой Богородицы",
-    title: "Киот резной",
-    location: "Ручная резьба по дереву",
-  },
-  {
-    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/4bed6513-34ec-454b-b3fb-9f7381211999.jpg",
-    alt: "Паникадило — люстра храмовая",
-    title: "Паникадило",
-    location: "Храмовая люстра",
+    category: "Иконостасы",
   },
   {
     src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/86c3165e-1701-42c9-94f6-786b47f552e0.jpg",
     alt: "Иконостас деревянный резной",
     title: "Иконостас",
     location: "Ручная работа",
-  },
-  {
-    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/317dc5f9-14b9-46c1-a0c4-63fa9a3e62f5.jpg",
-    alt: "Киот белый с золотом в мастерской",
-    title: "Киот белый с золотом",
-    location: "Мастерская",
+    category: "Иконостасы",
   },
   {
     src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/7d3197f5-0022-4eb4-a188-7f1cadbd441a.JPG",
     alt: "Иконостас в деревянном храме",
     title: "Иконостас",
     location: "Деревянный храм",
-  },
-  {
-    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/c3ca9561-aacd-4fe4-8e74-63ba6a93b982.JPG",
-    alt: "Резной аналой с куполом",
-    title: "Аналой резной",
-    location: "Ручная резьба по дереву",
-  },
-  {
-    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/7f6a4eea-c8c0-4fb3-b685-092882e0bdb9.JPG",
-    alt: "Резное Распятие в мастерской",
-    title: "Распятие резное",
-    location: "Мастерская",
-  },
-  {
-    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/22843f6d-0731-4ec2-9baf-48c8182fc20a.JPG",
-    alt: "Белый киот с иконами",
-    title: "Киот белый",
-    location: "Мастерская",
-  },
-  {
-    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/ddeff19a-08c7-442f-bfa9-090ab180a31c.jpg",
-    alt: "Киот с резным золочёным обрамлением и иконой Богородицы",
-    title: "Киот «Виноградная лоза»",
-    location: "Ручная резьба, золочение",
+    category: "Иконостасы",
   },
   {
     src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/9a21fb88-4146-4038-9e76-89575030a7a8.jpg",
     alt: "Иконостас, ул. Калинина",
     title: "Иконостас",
     location: "Самара, ул. Калинина",
+    category: "Иконостасы",
   },
   {
     src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/5d753485-4d41-46fe-8ee3-a9913b809859.jpg",
     alt: "Иконостас резной с росписью",
     title: "Иконостас",
     location: "Ручная работа",
+    category: "Иконостасы",
+  },
+  {
+    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/72a67cb6-6335-4bce-b083-57c556e07012.jpg",
+    alt: "Резной киот с иконой Богородицы",
+    title: "Киот резной",
+    location: "Ручная резьба по дереву",
+    category: "Киоты",
+  },
+  {
+    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/317dc5f9-14b9-46c1-a0c4-63fa9a3e62f5.jpg",
+    alt: "Киот белый с золотом в мастерской",
+    title: "Киот белый с золотом",
+    location: "Мастерская",
+    category: "Киоты",
+  },
+  {
+    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/22843f6d-0731-4ec2-9baf-48c8182fc20a.JPG",
+    alt: "Белый киот с иконами",
+    title: "Киот белый",
+    location: "Мастерская",
+    category: "Киоты",
+  },
+  {
+    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/ddeff19a-08c7-442f-bfa9-090ab180a31c.jpg",
+    alt: "Киот с резным золочёным обрамлением и иконой Богородицы",
+    title: "Киот «Виноградная лоза»",
+    location: "Ручная резьба, золочение",
+    category: "Киоты",
   },
   {
     src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/a34dee0b-425e-452b-8d7b-2722b2e712e3.jpg",
     alt: "Киот белый с золотом в мастерской",
     title: "Киот белый с золотом",
     location: "Мастерская",
+    category: "Киоты",
   },
   {
     src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/1b0de553-3d60-4457-9244-83e26b58fe5a.jpg",
     alt: "Киот белый с золотом — производство",
     title: "Киот — производство",
     location: "Мастерская",
+    category: "Киоты",
+  },
+  {
+    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/c3ca9561-aacd-4fe4-8e74-63ba6a93b982.JPG",
+    alt: "Резной аналой с куполом",
+    title: "Аналой резной",
+    location: "Ручная резьба по дереву",
+    category: "Утварь",
+  },
+  {
+    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/7f6a4eea-c8c0-4fb3-b685-092882e0bdb9.JPG",
+    alt: "Резное Распятие в мастерской",
+    title: "Распятие резное",
+    location: "Мастерская",
+    category: "Утварь",
+  },
+  {
+    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/4bed6513-34ec-454b-b3fb-9f7381211999.jpg",
+    alt: "Паникадило — люстра храмовая",
+    title: "Паникадило",
+    location: "Храмовая люстра",
+    category: "Утварь",
   },
   {
     src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/a2eec3f7-5efb-4c4b-b73f-7db637d6d544.jpeg",
     alt: "Престол деревянный резной",
     title: "Престол резной",
     location: "Ручная резьба по дереву",
+    category: "Утварь",
+  },
+  {
+    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/2072f6d3-8ccb-4169-a093-bf8683529ad9.jpg",
+    alt: "Заготовки киотов в мастерской",
+    title: "Производство киотов",
+    location: "Мастерская",
+    category: "Мастерская",
   },
 ]
+
+const galleryCategories = ["Все", "Иконостасы", "Киоты", "Утварь", "Мастерская"]
 
 const Index = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
   const [lightbox, setLightbox] = useState<number | null>(null)
+  const [activeCategory, setActiveCategory] = useState("Все")
+
+  const filteredItems = activeCategory === "Все"
+    ? galleryItems
+    : galleryItems.filter(item => item.category === activeCategory)
 
   const toggleFaq = (index: number) => {
     setOpenFaq(openFaq === index ? null : index)
@@ -307,12 +339,28 @@ const Index = () => {
             </p>
           </div>
 
+          <div className="flex flex-wrap justify-center gap-3 mb-12">
+            {galleryCategories.map(cat => (
+              <button
+                key={cat}
+                onClick={() => setActiveCategory(cat)}
+                className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${
+                  activeCategory === cat
+                    ? "bg-white text-black"
+                    : "bg-white/10 text-white/70 hover:bg-white/20 hover:text-white ring-1 ring-white/20"
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {galleryItems.map((item, index) => (
+            {filteredItems.map((item) => (
               <div
-                key={index}
+                key={item.src}
                 className="rounded-2xl overflow-hidden ring-1 ring-white/10 group cursor-pointer"
-                onClick={() => setLightbox(index)}
+                onClick={() => setLightbox(galleryItems.indexOf(item))}
               >
                 <div className="relative h-80 overflow-hidden">
                   <img
@@ -327,6 +375,7 @@ const Index = () => {
                     </div>
                   </div>
                   <div className="absolute bottom-0 left-0 p-6">
+                    <span className="inline-block text-xs text-white/50 bg-white/10 px-2 py-0.5 rounded-full mb-1">{item.category}</span>
                     <h3 className="text-xl font-semibold">{item.title}</h3>
                     <p className="text-white/70 text-sm mt-1">{item.location}</p>
                   </div>
