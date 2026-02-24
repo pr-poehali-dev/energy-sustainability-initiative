@@ -294,6 +294,33 @@ const Index = () => {
 
       <section id="о-нас" className="relative z-10 py-24 px-6">
         <div className="max-w-7xl mx-auto">
+
+          <div className="mb-16">
+            <p className="text-white/70 text-lg leading-relaxed mb-12 max-w-3xl">
+              Мастерская занимается изготовлением церковной утвари и предметов храмового убранства более 20 лет.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+              <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 flex gap-6 items-start">
+                <div className="inline-flex shrink-0 items-center justify-center w-14 h-14 rounded-full bg-black/30 ring-1 ring-white/20 text-2xl">
+                  🪵
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Андрей</h3>
+                  <p className="text-white/70 leading-relaxed">Специализируется на изготовлении деревянных киотов и иконостасов.</p>
+                </div>
+              </div>
+              <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 flex gap-6 items-start">
+                <div className="inline-flex shrink-0 items-center justify-center w-14 h-14 rounded-full bg-black/30 ring-1 ring-white/20 text-2xl">
+                  🎨
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Ирина</h3>
+                  <p className="text-white/70 leading-relaxed">Изготовление мозаичных икон и стенной мозаики.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
             <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 text-center">
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
