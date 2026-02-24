@@ -69,6 +69,36 @@ const galleryItems: GalleryItem[] = [
     title: "Нечаянная Радость — монтаж",
     location: "Зубчаниновка, Самарская область",
   },
+  {
+    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/2072f6d3-8ccb-4169-a093-bf8683529ad9.jpg",
+    alt: "Заготовки киотов в мастерской",
+    title: "Производство киотов",
+    location: "Мастерская",
+  },
+  {
+    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/72a67cb6-6335-4bce-b083-57c556e07012.jpg",
+    alt: "Резной киот с иконой Богородицы",
+    title: "Киот резной",
+    location: "Ручная резьба по дереву",
+  },
+  {
+    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/4bed6513-34ec-454b-b3fb-9f7381211999.jpg",
+    alt: "Паникадило — люстра храмовая",
+    title: "Паникадило",
+    location: "Храмовая люстра",
+  },
+  {
+    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/86c3165e-1701-42c9-94f6-786b47f552e0.jpg",
+    alt: "Иконостас деревянный резной",
+    title: "Иконостас",
+    location: "Ручная работа",
+  },
+  {
+    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/317dc5f9-14b9-46c1-a0c4-63fa9a3e62f5.jpg",
+    alt: "Киот белый с золотом в мастерской",
+    title: "Киот белый с золотом",
+    location: "Мастерская",
+  },
 ]
 
 const Index = () => {
