@@ -39,6 +39,36 @@ const galleryItems: GalleryItem[] = [
     title: "Иконостас",
     location: "Димитровград",
   },
+  {
+    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/7343510c-8b9e-4638-9821-53e385b33c8b.JPG",
+    alt: "Иконостас Серафимовская, братья Корыстелевы",
+    title: "Серафимовская церковь",
+    location: "Иконостас ручной работы",
+  },
+  {
+    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/e8c21f08-759a-4557-b2a7-266150a73541.jpg",
+    alt: "Иконостас в гостинице Русская охота",
+    title: "Иконостас",
+    location: "Гостиница «Русская охота»",
+  },
+  {
+    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/8112ced8-3884-4e9b-85ab-4899bc1030fd.jpg",
+    alt: "Иконостас, Винновка",
+    title: "Иконостас",
+    location: "Винновка",
+  },
+  {
+    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/b7dd4cfc-d8d4-414d-8d14-70f0a301de3e.JPG",
+    alt: "Иконостас, храм Ильи Пророка",
+    title: "Иконостас Ильи Пророка",
+    location: "Самара, ул. 116-я",
+  },
+  {
+    src: "https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/bucket/969b5d41-1ba0-4503-b825-5e0a84e81ebd.jpg",
+    alt: "Монтаж иконостаса Нечаянная Радость, Зубчаниновка",
+    title: "Нечаянная Радость — монтаж",
+    location: "Зубчаниновка, Самарская область",
+  },
 ]
 
 const Index = () => {
