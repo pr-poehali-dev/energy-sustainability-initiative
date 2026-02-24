@@ -225,7 +225,7 @@ const Index = () => {
   ]
 
   return (
-    <div className="min-h-screen bg-[#0B0F12] text-white">
+    <div className="min-h-screen bg-background text-foreground">
       <div className="relative min-h-screen">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -233,11 +233,11 @@ const Index = () => {
             backgroundImage: "url(https://cdn.poehali.dev/files/4e9d395f-bf04-4d97-b220-30fa8cc5af0a.jpg)",
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/80" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/70" />
         </div>
 
         <nav className="relative z-10 flex items-center justify-between p-6">
-          <div className="flex items-center gap-2 px-4 py-2 bg-black/40 ring-1 ring-white/20 backdrop-blur rounded-full">
+          <div className="flex items-center gap-2 px-4 py-2 bg-white/70 ring-1 ring-stone-300 backdrop-blur rounded-full text-stone-800">
             <Icon name="Church" size={20} />
             <span className="font-medium text-balance">Тростянка</span>
           </div>
@@ -247,7 +247,7 @@ const Index = () => {
               <a
                 key={item}
                 href={`#${item.toLowerCase().replace(/ /g, "-")}`}
-                className="px-4 py-2 bg-black/40 ring-1 ring-white/20 backdrop-blur rounded-full hover:bg-black/50 transition-colors"
+                className="px-4 py-2 bg-white/70 ring-1 ring-stone-300 backdrop-blur rounded-full text-stone-800 hover:bg-white/90 transition-colors text-sm font-medium"
               >
                 {item}
               </a>
@@ -257,8 +257,8 @@ const Index = () => {
 
         </nav>
 
-        <div className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-120px)] px-6 text-center">
-          <div className="mb-6 px-4 py-2 bg-black/40 ring-1 ring-white/20 backdrop-blur rounded-full">
+        <div className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-120px)] px-6 text-center text-white">
+          <div className="mb-6 px-4 py-2 bg-white/20 ring-1 ring-white/40 backdrop-blur rounded-full">
             <span className="text-sm font-medium">Более 20 лет мастерства и традиций</span>
           </div>
 
@@ -274,93 +274,93 @@ const Index = () => {
             <Button
               size="lg"
               variant="outline"
-              className="bg-black/40 ring-1 ring-white/20 backdrop-blur border-0 text-white hover:bg-black/50 rounded-full px-8 py-4 text-lg"
+              className="bg-white/20 ring-1 ring-white/40 backdrop-blur border-0 text-white hover:bg-white/30 rounded-full px-8 py-4 text-lg"
             >
               Наши работы
             </Button>
           </div>
 
-          <div className="flex items-center gap-2 px-4 py-2 bg-black/40 ring-1 ring-white/20 backdrop-blur rounded-full">
+          <div className="flex items-center gap-2 px-4 py-2 bg-white/20 ring-1 ring-white/40 backdrop-blur rounded-full">
             <Icon name="Award" size={16} />
             <span className="text-sm font-medium">Ручная работа по православным канонам</span>
           </div>
         </div>
       </div>
 
-      <section id="о-нас" className="relative z-10 py-24 px-6">
+      <section id="о-нас" className="relative z-10 py-24 px-6 bg-background">
         <div className="max-w-7xl mx-auto">
 
           <div className="text-center mb-12">
-            <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6">О нас</h2>
+            <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-foreground">О нас</h2>
           </div>
 
           <div className="mb-16">
-            <p className="text-white/70 text-lg leading-relaxed mb-12 max-w-3xl">
+            <p className="text-muted-foreground text-lg leading-relaxed mb-12 max-w-3xl">
               Мастерская занимается изготовлением церковной утвари и предметов храмового убранства более 20 лет.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
-              <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 flex gap-6 items-start">
-                <div className="inline-flex shrink-0 items-center justify-center w-14 h-14 rounded-full bg-black/30 ring-1 ring-white/20 text-2xl">
+              <div className="rounded-2xl bg-card ring-1 ring-border p-8 flex gap-6 items-start">
+                <div className="inline-flex shrink-0 items-center justify-center w-14 h-14 rounded-full bg-accent ring-1 ring-border text-2xl">
                   🪵
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Андрей</h3>
-                  <p className="text-white/70 leading-relaxed">Специализируется на изготовлении деревянных киотов и иконостасов.</p>
+                  <h3 className="text-xl font-semibold mb-2 text-foreground">Андрей</h3>
+                  <p className="text-muted-foreground leading-relaxed">Специализируется на изготовлении деревянных киотов и иконостасов.</p>
                 </div>
               </div>
-              <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 flex gap-6 items-start">
-                <div className="inline-flex shrink-0 items-center justify-center w-14 h-14 rounded-full bg-black/30 ring-1 ring-white/20 text-2xl">
+              <div className="rounded-2xl bg-card ring-1 ring-border p-8 flex gap-6 items-start">
+                <div className="inline-flex shrink-0 items-center justify-center w-14 h-14 rounded-full bg-accent ring-1 ring-border text-2xl">
                   🎨
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Ирина</h3>
-                  <p className="text-white/70 leading-relaxed">Изготовление мозаичных икон и стенной мозаики.</p>
+                  <h3 className="text-xl font-semibold mb-2 text-foreground">Ирина</h3>
+                  <p className="text-muted-foreground leading-relaxed">Изготовление мозаичных икон и стенной мозаики.</p>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
-            <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
+            <div className="rounded-2xl bg-card ring-1 ring-border p-8 text-center">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-accent ring-1 ring-border mb-6 text-foreground">
                 <Icon name="Frame" size={24} />
               </div>
-              <h3 className="text-xl font-semibold mb-4">Киоты и иконостасы</h3>
-              <p className="text-white/80 leading-relaxed">Деревянные киоты и иконостасы ручной работы по индивидуальным проектам.</p>
+              <h3 className="text-xl font-semibold mb-4 text-foreground">Киоты и иконостасы</h3>
+              <p className="text-muted-foreground leading-relaxed">Деревянные киоты и иконостасы ручной работы по индивидуальным проектам.</p>
             </div>
 
-            <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
+            <div className="rounded-2xl bg-card ring-1 ring-border p-8 text-center">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-accent ring-1 ring-border mb-6 text-foreground">
                 <Icon name="Palette" size={24} />
               </div>
-              <h3 className="text-xl font-semibold mb-4">Мозаика и иконы</h3>
-              <p className="text-white/80 leading-relaxed">Храмовая мозаика и мозаичные иконы с соблюдением канонов.</p>
+              <h3 className="text-xl font-semibold mb-4 text-foreground">Мозаика и иконы</h3>
+              <p className="text-muted-foreground leading-relaxed">Храмовая мозаика и мозаичные иконы с соблюдением канонов.</p>
             </div>
 
-            <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
+            <div className="rounded-2xl bg-card ring-1 ring-border p-8 text-center">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-accent ring-1 ring-border mb-6 text-foreground">
                 <Icon name="Gem" size={24} />
               </div>
-              <h3 className="text-xl font-semibold mb-4">Отделка и облицовка</h3>
-              <p className="text-white/80 leading-relaxed">Внутренняя отделка храмов плиткой и натуральным гранитом.</p>
+              <h3 className="text-xl font-semibold mb-4 text-foreground">Отделка и облицовка</h3>
+              <p className="text-muted-foreground leading-relaxed">Внутренняя отделка храмов плиткой и натуральным гранитом.</p>
             </div>
 
-            <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
+            <div className="rounded-2xl bg-card ring-1 ring-border p-8 text-center">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-accent ring-1 ring-border mb-6 text-foreground">
                 <Icon name="Crown" size={24} />
               </div>
-              <h3 className="text-xl font-semibold mb-4">Церковная утварь</h3>
-              <p className="text-white/80 leading-relaxed">Изготовление предметов церковного обихода из дерева и других материалов.</p>
+              <h3 className="text-xl font-semibold mb-4 text-foreground">Церковная утварь</h3>
+              <p className="text-muted-foreground leading-relaxed">Изготовление предметов церковного обихода из дерева и других материалов.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="наши-работы" className="relative z-10 py-24 px-6">
+      <section id="наши-работы" className="relative z-10 py-24 px-6 bg-secondary">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance">Наши работы</h2>
-            <p className="text-xl text-white/80 max-w-3xl mx-auto text-pretty">
+            <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance text-foreground">Наши работы</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
               Каждое изделие создаётся вручную с соблюдением православных канонов и традиций иконописи.
             </p>
           </div>
@@ -372,8 +372,8 @@ const Index = () => {
                 onClick={() => setActiveCategory(cat)}
                 className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${
                   activeCategory === cat
-                    ? "bg-white text-black"
-                    : "bg-white/10 text-white/70 hover:bg-white/20 hover:text-white ring-1 ring-white/20"
+                    ? "bg-stone-800 text-white"
+                    : "bg-white text-stone-600 hover:bg-stone-100 hover:text-stone-800 ring-1 ring-border"
                 }`}
               >
                 {cat}
@@ -385,7 +385,7 @@ const Index = () => {
             {filteredItems.map((item) => (
               <div
                 key={item.src}
-                className="rounded-2xl overflow-hidden ring-1 ring-white/10 group cursor-pointer"
+                className="rounded-2xl overflow-hidden ring-1 ring-border group cursor-pointer bg-card"
                 onClick={() => setLightbox(galleryItems.indexOf(item))}
               >
                 <div className="relative h-80 overflow-hidden">
@@ -396,14 +396,14 @@ const Index = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                    <div className="bg-black/50 rounded-full p-3">
-                      <Icon name="ZoomIn" size={28} />
+                    <div className="bg-white/80 rounded-full p-3">
+                      <Icon name="ZoomIn" size={28} className="text-stone-800" />
                     </div>
                   </div>
-                  <div className="absolute bottom-0 left-0 p-6">
-                    <span className="inline-block text-xs text-white/50 bg-white/10 px-2 py-0.5 rounded-full mb-1">{item.category}</span>
+                  <div className="absolute bottom-0 left-0 p-6 text-white">
+                    <span className="inline-block text-xs text-white/70 bg-white/20 px-2 py-0.5 rounded-full mb-1">{item.category}</span>
                     <h3 className="text-xl font-semibold">{item.title}</h3>
-                    <p className="text-white/70 text-sm mt-1">{item.location}</p>
+                    <p className="text-white/80 text-sm mt-1">{item.location}</p>
                   </div>
                 </div>
               </div>
@@ -452,52 +452,52 @@ const Index = () => {
         </div>
       )}
 
-      <section id="этапы-работы" className="relative z-10 py-24 px-6">
+      <section id="этапы-работы" className="relative z-10 py-24 px-6 bg-background">
         <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-12">
+          <div className="rounded-3xl bg-card ring-1 ring-border p-12">
             <div className="text-center mb-16">
-              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance">Как мы работаем</h2>
-              <p className="text-xl text-white/80 max-w-3xl mx-auto text-pretty">
+              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance text-foreground">Как мы работаем</h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
                 От первой встречи до установки готового изделия в храме — каждый этап под контролем мастеров.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-              <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-8 h-80 flex flex-col">
+              <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 h-80 flex flex-col">
                 <div className="flex-1">
-                  <div className="text-3xl font-bold text-white/60 mb-4">01.</div>
-                  <h3 className="text-xl font-semibold mb-4">Консультация</h3>
-                  <p className="text-white/80 leading-relaxed text-sm">
+                  <div className="text-3xl font-bold text-muted-foreground mb-4">01.</div>
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">Консультация</h3>
+                  <p className="text-muted-foreground leading-relaxed text-sm">
                     Обсуждаем ваши пожелания, изучаем особенности храма, при необходимости выезжаем на объект для замеров и оценки пространства.
                   </p>
                 </div>
               </div>
 
-              <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-8 h-80 flex flex-col">
+              <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 h-80 flex flex-col">
                 <div className="flex-1">
-                  <div className="text-3xl font-bold text-white/60 mb-4">02.</div>
-                  <h3 className="text-xl font-semibold mb-4">Проектирование</h3>
-                  <p className="text-white/80 leading-relaxed text-sm">
+                  <div className="text-3xl font-bold text-muted-foreground mb-4">02.</div>
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">Проектирование</h3>
+                  <p className="text-muted-foreground leading-relaxed text-sm">
                     Разрабатываем эскизный проект с учётом архитектуры храма, канонов и ваших пожеланий. Согласовываем материалы, размеры и детали.
                   </p>
                 </div>
               </div>
 
-              <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-8 h-80 flex flex-col">
+              <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 h-80 flex flex-col">
                 <div className="flex-1">
-                  <div className="text-3xl font-bold text-white/60 mb-4">03.</div>
-                  <h3 className="text-xl font-semibold mb-4">Изготовление</h3>
-                  <p className="text-white/80 leading-relaxed text-sm">
+                  <div className="text-3xl font-bold text-muted-foreground mb-4">03.</div>
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">Изготовление</h3>
+                  <p className="text-muted-foreground leading-relaxed text-sm">
                     Мастера вручную создают изделие в нашей мастерской в селе Тростянка, используя проверенные технологии и натуральные материалы.
                   </p>
                 </div>
               </div>
 
-              <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-8 h-80 flex flex-col">
+              <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 h-80 flex flex-col">
                 <div className="flex-1">
-                  <div className="text-3xl font-bold text-white/60 mb-4">04.</div>
-                  <h3 className="text-xl font-semibold mb-4">Доставка и монтаж</h3>
-                  <p className="text-white/80 leading-relaxed text-sm">
+                  <div className="text-3xl font-bold text-muted-foreground mb-4">04.</div>
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">Доставка и монтаж</h3>
+                  <p className="text-muted-foreground leading-relaxed text-sm">
                     Бережно доставляем готовое изделие и выполняем профессиональный монтаж на месте. Гарантируем качество установки.
                   </p>
                 </div>
@@ -509,9 +509,9 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="relative z-10 py-24 px-6">
+      <section className="relative z-10 py-24 px-6 bg-background">
         <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl overflow-hidden ring-1 ring-white/10">
+          <div className="rounded-3xl overflow-hidden ring-1 ring-border">
             <img
               src="https://cdn.poehali.dev/projects/12f04b4e-e6b1-41eb-ad0d-6b60c09a26ea/files/d9259d61-f435-41f5-983e-00aa3b7b7c0b.jpg"
               alt="Мастер за работой — резьба по дереву для иконостаса"
@@ -523,60 +523,60 @@ const Index = () => {
 
 
 
-      <section id="контакты" className="relative z-10 py-24 px-6">
+      <section id="контакты" className="relative z-10 py-24 px-6 bg-secondary">
         <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-12">
+          <div className="rounded-3xl bg-card ring-1 ring-border p-12">
             <div className="text-center mb-16">
-              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance">Свяжитесь с нами</h2>
+              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance text-foreground">Свяжитесь с нами</h2>
             </div>
 
             <div>
               <div className="space-y-8">
                 <div>
-                  <p className="text-xl text-white/90 leading-relaxed text-pretty">
+                  <p className="text-xl text-foreground leading-relaxed text-pretty">
                     По вопросам изготовления иконостасов, киотов, мозаики и отделочных работ — свяжитесь с нами. Мы ответим в течение одного рабочего дня.
                   </p>
                 </div>
 
                 <div className="space-y-4">
-                  <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-6">
-                    <div className="flex items-center gap-3 mb-2">
+                  <div className="rounded-2xl bg-secondary ring-1 ring-border p-6">
+                    <div className="flex items-center gap-3 mb-2 text-foreground">
                       <Icon name="Phone" size={20} />
                       <span className="font-semibold">Телефон</span>
                     </div>
-                    <a href="tel:+79608324353" className="text-white/80 text-sm hover:text-white transition-colors">+7 (960) 832-43-53 — Андрей</a>
+                    <a href="tel:+79608324353" className="text-muted-foreground text-sm hover:text-foreground transition-colors">+7 (960) 832-43-53 — Андрей</a>
                   </div>
 
-                  <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-6">
-                    <div className="flex items-center gap-3 mb-2">
+                  <div className="rounded-2xl bg-secondary ring-1 ring-border p-6">
+                    <div className="flex items-center gap-3 mb-2 text-foreground">
                       <Icon name="Globe" size={20} />
                       <span className="font-semibold">Сайт</span>
                     </div>
-                    <a href="https://master-a.pro" target="_blank" rel="noopener noreferrer" className="text-white/80 text-sm hover:text-white transition-colors">master-a.pro</a>
+                    <a href="https://master-a.pro" target="_blank" rel="noopener noreferrer" className="text-muted-foreground text-sm hover:text-foreground transition-colors">master-a.pro</a>
                   </div>
 
-                  <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-6">
-                    <div className="flex items-center gap-3 mb-2">
+                  <div className="rounded-2xl bg-secondary ring-1 ring-border p-6">
+                    <div className="flex items-center gap-3 mb-2 text-foreground">
                       <Icon name="MapPin" size={20} />
                       <span className="font-semibold">Адрес</span>
                     </div>
-                    <p className="text-white/80 text-sm">с. Тростянка, Богатовский район, Самарская область</p>
+                    <p className="text-muted-foreground text-sm">с. Тростянка, Богатовский район, Самарская область</p>
                   </div>
 
-                  <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-6">
-                    <div className="flex items-center gap-3 mb-2">
+                  <div className="rounded-2xl bg-secondary ring-1 ring-border p-6">
+                    <div className="flex items-center gap-3 mb-2 text-foreground">
                       <Icon name="Clock" size={20} />
                       <span className="font-semibold">Режим работы</span>
                     </div>
-                    <p className="text-white/80 text-sm">Пн — Сб: 8:00 — 18:00</p>
+                    <p className="text-muted-foreground text-sm">Пн — Сб: 8:00 — 18:00</p>
                   </div>
 
-                  <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-6">
-                    <div className="flex items-center gap-3 mb-2">
+                  <div className="rounded-2xl bg-secondary ring-1 ring-border p-6">
+                    <div className="flex items-center gap-3 mb-2 text-foreground">
                       <Icon name="History" size={20} />
                       <span className="font-semibold">Опыт</span>
                     </div>
-                    <p className="text-white/80 text-sm">Более 20 лет работы с храмами по всей России</p>
+                    <p className="text-muted-foreground text-sm">Более 20 лет работы с храмами по всей России</p>
                   </div>
                 </div>
               </div>
@@ -585,26 +585,26 @@ const Index = () => {
         </div>
       </section>
 
-      <footer className="relative z-10 py-24 px-6">
+      <footer className="relative z-10 py-24 px-6 bg-background">
         <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-white/[0.03] backdrop-blur-2xl ring-1 ring-white/10 p-12">
+          <div className="rounded-3xl bg-card ring-1 ring-border p-12">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
               <div className="lg:col-span-2">
-                <div className="flex items-center gap-2 mb-6">
+                <div className="flex items-center gap-2 mb-6 text-foreground">
                   <Icon name="Church" size={24} />
                   <span className="text-xl font-semibold">Тростянка</span>
                 </div>
-                <p className="text-white/80 leading-relaxed text-pretty">
+                <p className="text-muted-foreground leading-relaxed text-pretty">
                   Центр благоустройства Храмов. Более 20 лет мы создаём деревянные киоты, иконостасы, церковную утварь и храмовую мозаику. Село Тростянка, Богатовский район, Самарская область.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-sm font-bold uppercase tracking-wider mb-6">О НАС</h3>
+                <h3 className="text-sm font-bold uppercase tracking-wider mb-6 text-foreground">О НАС</h3>
                 <ul className="space-y-3">
                   {["Иконостасы", "Киоты", "Мозаика", "Церковная утварь"].map((item) => (
                     <li key={item}>
-                      <a href="#" className="text-white/70 hover:text-white transition-colors text-sm leading-relaxed">
+                      <a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm leading-relaxed">
                         {item}
                       </a>
                     </li>
@@ -613,11 +613,11 @@ const Index = () => {
               </div>
 
               <div>
-                <h3 className="text-sm font-bold uppercase tracking-wider mb-6">О ЦЕНТРЕ</h3>
+                <h3 className="text-sm font-bold uppercase tracking-wider mb-6 text-foreground">О ЦЕНТРЕ</h3>
                 <ul className="space-y-3">
                   {["Наша история", "Мастера", "Материалы", "Галерея работ"].map((item) => (
                     <li key={item}>
-                      <a href="#" className="text-white/70 hover:text-white transition-colors text-sm leading-relaxed">
+                      <a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm leading-relaxed">
                         {item}
                       </a>
                     </li>
@@ -626,11 +626,11 @@ const Index = () => {
               </div>
 
               <div>
-                <h3 className="text-sm font-bold uppercase tracking-wider mb-6">ИНФОРМАЦИЯ</h3>
+                <h3 className="text-sm font-bold uppercase tracking-wider mb-6 text-foreground">ИНФОРМАЦИЯ</h3>
                 <ul className="space-y-3">
                   {["Контакты", "Как заказать", "Доставка", "Вопросы и ответы"].map((item) => (
                     <li key={item}>
-                      <a href="#" className="text-white/70 hover:text-white transition-colors text-sm leading-relaxed">
+                      <a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm leading-relaxed">
                         {item}
                       </a>
                     </li>
@@ -639,22 +639,22 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="border-t border-white/10 pt-12 mb-12">
+            <div className="border-t border-border pt-12 mb-12">
               <div className="max-w-md">
-                <h3 className="text-lg font-semibold mb-4">Новости центра</h3>
+                <h3 className="text-lg font-semibold mb-4 text-foreground">Новости центра</h3>
                 <div className="flex gap-3">
                   <input
                     type="email"
                     placeholder="Введите ваш email"
-                    className="flex-1 px-4 py-3 rounded-lg bg-white/5 ring-1 ring-white/20 backdrop-blur border-0 text-white placeholder:text-white/50 focus:ring-2 focus:ring-white/30 focus:outline-none"
+                    className="flex-1 px-4 py-3 rounded-lg bg-secondary ring-1 ring-border border-0 text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-ring focus:outline-none"
                   />
-                  <Button className="bg-white text-black hover:bg-white/90 rounded-lg px-6 h-[50px]">Подписаться</Button>
+                  <Button className="bg-stone-800 text-white hover:bg-stone-700 rounded-lg px-6 h-[50px]">Подписаться</Button>
                 </div>
               </div>
             </div>
 
-            <div className="border-t border-white/10 pt-8">
-              <p className="text-white/60 text-sm text-center">© 2026 Центр благоустройства Храмов «Тростянка»</p>
+            <div className="border-t border-border pt-8">
+              <p className="text-muted-foreground text-sm text-center">© 2026 Центр благоустройства Храмов «Тростянка»</p>
             </div>
           </div>
         </div>
