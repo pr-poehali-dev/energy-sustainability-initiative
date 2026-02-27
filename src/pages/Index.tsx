@@ -243,7 +243,7 @@ const Index = () => {
           </div>
 
           <div className="hidden md:flex items-center gap-1">
-            {["О нас", "Наши работы", "Этапы работы", "Контакты"].map((item) => (
+            {["О нас", "Наши работы", "Этапы работы", "Отзывы", "Контакты"].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase().replace(/ /g, "-")}`}
