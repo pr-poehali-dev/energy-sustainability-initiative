@@ -523,6 +523,35 @@ const Index = () => {
 
 
 
+      <section id="отзывы" className="relative z-10 py-24 px-6 bg-secondary">
+        <div className="max-w-7xl mx-auto">
+          <div className="rounded-3xl bg-card ring-1 ring-border p-12">
+            <div className="text-center mb-16">
+              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance text-foreground">Отзывы</h2>
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Что говорят наши клиенты о работах центра «Тростянка»</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {[
+                { name: "Мария М.", text: "Аналой ажурный, воздушный, легкий, т.к. резные боковины - из толстой фанеры, а верхняя наклонная часть - из дерева, отполированная. В жизни смотрится лучше, чем на картинке. Всем понравился. Спасибо производителю. Но, считаю, что дороговато для фанерного, хоть и красивого аналоя. Отдельное спасибо за качественную упаковку (пришел в собранном виде)." },
+                { name: "Наталья П.", text: "Товар добрался в Карельскую глубинку, спасибо за доставку, понравился всем, стоит устойчиво, лёгкий, рисунок на берёзовой фанере, спасибо производителю." },
+                { name: "Шевцова Олеся", text: "Спаси Господь за труды. Все хорошо. Аналои понравились. Благодарим." },
+                { name: "Лилия Г.", text: "Для нашего храма очень подходит (Аналой)." },
+              ].map((review) => (
+                <div key={review.name} className="rounded-2xl bg-secondary ring-1 ring-border p-8 flex flex-col gap-4">
+                  <div className="flex gap-1">
+                    {[1,2,3,4,5].map((s) => (
+                      <Icon key={s} name="Star" size={16} className="text-yellow-400 fill-yellow-400" />
+                    ))}
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed flex-1">«{review.text}»</p>
+                  <p className="font-semibold text-foreground">{review.name}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="контакты" className="relative z-10 py-24 px-6 bg-secondary">
         <div className="max-w-7xl mx-auto">
           <div className="rounded-3xl bg-card ring-1 ring-border p-12">
