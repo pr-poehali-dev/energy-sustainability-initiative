@@ -192,7 +192,7 @@ const GallerySection = () => {
 
   return (
     <>
-      <section id="о-нас" className="relative z-10 py-24 px-6 bg-background">
+      <section id="о-нас" className="relative z-10 py-24 px-6 bg-[#000000]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-foreground">О нас</h2>
