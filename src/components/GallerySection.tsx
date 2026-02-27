@@ -203,7 +203,7 @@ const GallerySection = () => {
               Мастерская занимается изготовлением церковной утвари и предметов храмового убранства более 20 лет.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
-              <div className="rounded-2xl bg-card ring-1 ring-border p-8 flex gap-6 items-start">
+              <div className="rounded-2xl ring-1 ring-border p-8 flex gap-6 items-start bg-zinc-900">
                 <div className="inline-flex shrink-0 items-center justify-center w-14 h-14 rounded-full bg-accent ring-1 ring-border text-2xl">
                   🪵
                 </div>
@@ -212,7 +212,7 @@ const GallerySection = () => {
                   <p className="text-muted-foreground leading-relaxed">Специализируется на изготовлении деревянных киотов и иконостасов.</p>
                 </div>
               </div>
-              <div className="rounded-2xl bg-card ring-1 ring-border p-8 flex gap-6 items-start">
+              <div className="rounded-2xl ring-1 ring-border p-8 flex gap-6 items-start bg-zinc-900">
                 <div className="inline-flex shrink-0 items-center justify-center w-14 h-14 rounded-full bg-accent ring-1 ring-border text-2xl">
                   🎨
                 </div>
@@ -225,7 +225,7 @@ const GallerySection = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
-            <div className="rounded-2xl bg-card ring-1 ring-border p-8 text-center">
+            <div className="rounded-2xl ring-1 ring-border p-8 text-center bg-zinc-900">
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-accent ring-1 ring-border mb-6 text-foreground">
                 <Icon name="Frame" size={24} />
               </div>
@@ -233,7 +233,7 @@ const GallerySection = () => {
               <p className="text-muted-foreground leading-relaxed">Деревянные киоты и иконостасы ручной работы по индивидуальным проектам.</p>
             </div>
 
-            <div className="rounded-2xl bg-card ring-1 ring-border p-8 text-center">
+            <div className="rounded-2xl ring-1 ring-border p-8 text-center bg-zinc-900">
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-accent ring-1 ring-border mb-6 text-foreground">
                 <Icon name="Palette" size={24} />
               </div>
@@ -241,7 +241,7 @@ const GallerySection = () => {
               <p className="text-muted-foreground leading-relaxed">Храмовая мозаика и мозаичные иконы с соблюдением канонов.</p>
             </div>
 
-            <div className="rounded-2xl bg-card ring-1 ring-border p-8 text-center">
+            <div className="rounded-2xl ring-1 ring-border p-8 text-center bg-zinc-900">
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-accent ring-1 ring-border mb-6 text-foreground">
                 <Icon name="Gem" size={24} />
               </div>
@@ -249,7 +249,7 @@ const GallerySection = () => {
               <p className="text-muted-foreground leading-relaxed">Внутренняя отделка храмов плиткой и натуральным гранитом.</p>
             </div>
 
-            <div className="rounded-2xl bg-card ring-1 ring-border p-8 text-center">
+            <div className="rounded-2xl ring-1 ring-border p-8 text-center bg-zinc-900">
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-accent ring-1 ring-border mb-6 text-foreground">
                 <Icon name="Crown" size={24} />
               </div>
@@ -260,7 +260,7 @@ const GallerySection = () => {
         </div>
       </section>
 
-      <section id="наши-работы" className="relative z-10 py-24 px-6 bg-secondary">
+      <section id="наши-работы" className="relative z-10 py-24 px-6 bg-zinc-900">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance text-foreground">Наши работы</h2>

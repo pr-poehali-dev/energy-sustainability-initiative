@@ -3,9 +3,9 @@ import Icon from "@/components/ui/icon"
 const WorkflowAndReviews = () => {
   return (
     <>
-      <section id="этапы-работы" className="relative z-10 py-24 px-6 bg-background">
+      <section id="этапы-работы" className="relative z-10 py-24 px-6 bg-zinc-900">
         <div className="max-w-7xl mx-auto">
-          <div className="bg-card ring-1 ring-border p-12 py-[30px] rounded-3xl">
+          <div className="ring-1 ring-border p-12 py-[30px] rounded-3xl bg-zinc-900">
             <div className="text-center mb-16">
               <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance text-foreground">Как мы работаем</h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
@@ -17,8 +17,8 @@ const WorkflowAndReviews = () => {
               <div className="bg-secondary ring-1 ring-border p-8 h-80 flex flex-col my-0 py-8 rounded-xl">
                 <div className="flex-1">
                   <div className="text-3xl font-bold text-muted-foreground mb-4">01.</div>
-                  <h3 className="text-xl font-semibold mb-4 text-foreground">Консультация</h3>
-                  <p className="text-muted-foreground leading-relaxed text-sm">
+                  <h3 className="font-semibold mb-4 text-foreground text-base">Консультация</h3>
+                  <p className="text-muted-foreground leading-relaxed text-xs">
                     Обсуждаем ваши пожелания, изучаем особенности храма, при необходимости выезжаем на объект для замеров и оценки пространства.
                   </p>
                 </div>
@@ -27,8 +27,8 @@ const WorkflowAndReviews = () => {
               <div className="bg-secondary ring-1 ring-border p-8 h-80 flex flex-col rounded-2xl">
                 <div className="flex-1">
                   <div className="text-3xl font-bold text-muted-foreground mb-4">02.</div>
-                  <h3 className="text-xl font-semibold mb-4 text-foreground">Проектирование</h3>
-                  <p className="text-muted-foreground leading-relaxed text-sm">
+                  <h3 className="font-semibold mb-4 text-foreground text-base">Проектирование</h3>
+                  <p className="text-muted-foreground leading-relaxed text-xs">
                     Разрабатываем эскизный проект с учётом архитектуры храма, канонов и ваших пожеланий. Согласовываем материалы, размеры и детали.
                   </p>
                 </div>
@@ -37,8 +37,8 @@ const WorkflowAndReviews = () => {
               <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 h-80 flex flex-col">
                 <div className="flex-1">
                   <div className="text-3xl font-bold text-muted-foreground mb-4">03.</div>
-                  <h3 className="text-xl font-semibold mb-4 text-foreground">Изготовление</h3>
-                  <p className="text-muted-foreground leading-relaxed text-sm">
+                  <h3 className="font-semibold mb-4 text-foreground text-base">Изготовление</h3>
+                  <p className="text-muted-foreground leading-relaxed text-xs">
                     Мастера вручную создают изделие в нашей мастерской в селе Тростянка, используя проверенные технологии и натуральные материалы.
                   </p>
                 </div>
@@ -47,8 +47,8 @@ const WorkflowAndReviews = () => {
               <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 h-80 flex flex-col">
                 <div className="flex-1">
                   <div className="text-3xl font-bold text-muted-foreground mb-4">04.</div>
-                  <h3 className="text-xl font-semibold mb-4 text-foreground">Доставка и монтаж</h3>
-                  <p className="text-muted-foreground leading-relaxed text-sm">
+                  <h3 className="font-semibold mb-4 text-foreground text-base">Доставка и монтаж</h3>
+                  <p className="text-muted-foreground leading-relaxed text-xs">
                     Бережно доставляем готовое изделие и выполняем профессиональный монтаж на месте. Гарантируем качество установки.
                   </p>
                 </div>
