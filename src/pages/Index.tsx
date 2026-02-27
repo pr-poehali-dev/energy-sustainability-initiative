@@ -454,7 +454,7 @@ const Index = () => {
 
       <section id="этапы-работы" className="relative z-10 py-24 px-6 bg-background">
         <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-card ring-1 ring-border p-12">
+          <div className="bg-card ring-1 ring-border p-12 py-[30px] rounded-3xl">
             <div className="text-center mb-16">
               <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance text-foreground">Как мы работаем</h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
@@ -463,7 +463,7 @@ const Index = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-              <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 h-80 flex flex-col">
+              <div className="bg-secondary ring-1 ring-border p-8 h-80 flex flex-col my-0 py-8 rounded-xl">
                 <div className="flex-1">
                   <div className="text-3xl font-bold text-muted-foreground mb-4">01.</div>
                   <h3 className="text-xl font-semibold mb-4 text-foreground">Консультация</h3>
@@ -473,7 +473,7 @@ const Index = () => {
                 </div>
               </div>
 
-              <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 h-80 flex flex-col">
+              <div className="bg-secondary ring-1 ring-border p-8 h-80 flex flex-col rounded-2xl">
                 <div className="flex-1">
                   <div className="text-3xl font-bold text-muted-foreground mb-4">02.</div>
                   <h3 className="text-xl font-semibold mb-4 text-foreground">Проектирование</h3>
