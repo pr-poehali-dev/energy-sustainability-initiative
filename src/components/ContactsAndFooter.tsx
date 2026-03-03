@@ -52,7 +52,7 @@ const ContactsAndFooter = () => {
                     <p className="text-muted-foreground text-sm">Пн — Сб: 8:00 — 18:00</p>
                   </div>
 
-                  <div className="rounded-2xl bg-secondary ring-1 ring-border p-6">
+                  <div className="rounded-2xl ring-1 ring-border p-6 bg-gray-800">
                     <div className="flex items-center gap-3 mb-2 text-foreground">
                       <Icon name="History" size={20} />
                       <span className="font-semibold">Опыт</span>
