@@ -52,7 +52,7 @@ const ContactsAndFooter = () => {
                     <p className="text-muted-foreground text-sm">Пн — Сб: 8:00 — 18:00</p>
                   </div>
 
-                  <div className="rounded-2xl ring-1 ring-border p-6 bg-gray-800">
+                  <div className="rounded-2xl ring-1 ring-border p-6 bg-secondary">
                     <div className="flex items-center gap-3 mb-2 text-foreground">
                       <Icon name="History" size={20} />
                       <span className="font-semibold">Опыт</span>
@@ -129,7 +129,7 @@ const ContactsAndFooter = () => {
                     placeholder="Введите ваш email"
                     className="flex-1 px-4 py-3 rounded-lg bg-secondary ring-1 ring-border border-0 text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-ring focus:outline-none"
                   />
-                  <Button className="bg-stone-800 text-white hover:bg-stone-700 rounded-lg px-6 h-[50px]">Подписаться</Button>
+                  <Button className="px-6 h-[50px]">Подписаться</Button>
                 </div>
               </div>
             </div>

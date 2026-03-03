@@ -3,9 +3,9 @@ import Icon from "@/components/ui/icon"
 const WorkflowAndReviews = () => {
   return (
     <>
-      <section id="этапы-работы" className="relative z-10 py-24 px-6 bg-zinc-900">
+      <section id="этапы-работы" className="relative z-10 py-24 px-6 bg-secondary">
         <div className="max-w-7xl mx-auto">
-          <div className="ring-1 ring-border p-12 py-[30px] rounded-3xl bg-zinc-900">
+          <div className="ring-1 ring-border p-12 py-[30px] rounded-3xl bg-card">
             <div className="text-center mb-16">
               <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance text-foreground">Как мы работаем</h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
