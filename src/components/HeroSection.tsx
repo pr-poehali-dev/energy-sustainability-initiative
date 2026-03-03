@@ -10,7 +10,7 @@ const HeroSection = () => {
           backgroundImage: "url(https://cdn.poehali.dev/files/4e9d395f-bf04-4d97-b220-30fa8cc5af0a.jpg)",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-amber-950/40 via-stone-800/50 to-amber-950/75" />
       </div>
 
       <nav className="relative z-10 flex items-center justify-between p-6">
